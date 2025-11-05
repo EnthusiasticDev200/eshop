@@ -1,0 +1,94 @@
+.parent__header {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.header__logo {
+    display: flex;
+    color : white;
+    justify-content: center;
+    align-items: center;
+    /* font-size: 12px;   */
+} 
+.header__logo_Title {
+    color : white;
+}
+.header__searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.header__searchInput {
+    border-style : groove;
+    width: 500px;
+    padding: 10px;
+}
+
+.header__searchBar button {
+    background: yellow;
+    padding: 4px;
+}
+
+.header__searchIcon {
+    color: white;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav .nav__item span {
+    display: block;
+}
+
+.nav__item__lineOne, .nav__item__lineTwo {
+    color: white;
+
+}
+
+.basketIcon {
+    color : white
+}
+
+.nav__item{
+    display : inline;
+    padding : 10px 15px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
