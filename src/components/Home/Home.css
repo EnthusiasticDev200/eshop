@@ -1,0 +1,62 @@
+.home {
+    display: inline;
+    justify-content: space-between;
+    
+}
+
+
+.home__image {
+    width: 79rem;
+    height: 45rem;
+    
+}
+
+.home-row-two,
+.home-row-three {
+    display: flex;
+    gap: 20px;
+}
+
+.home-row-two > div {
+    /* flex-basis: 1/2; */
+    width: 50%;
+}
+
+.home-row-three > div {
+    /* flex-basis: 1/2; */
+    width: 33%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
