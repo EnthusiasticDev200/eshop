@@ -23,13 +23,15 @@
 
 .header__searchInput {
     border-style : groove;
-    width: 500px;
+    width: 52rem;
     padding: 10px;
+    border-radius: 1rem;
 }
 
 .header__searchBar button {
-    background: yellow;
+    background: rgb(50, 50, 11);
     padding: 4px;
+    border-radius: 1rem;
 }
 
 .header__searchIcon {
@@ -57,38 +59,4 @@
     display : inline;
     padding : 10px 15px
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
