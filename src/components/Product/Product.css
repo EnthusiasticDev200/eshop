@@ -1,0 +1,48 @@
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+.product__title {
+    font-display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.product__image {
+    width: 10rem;
+    justify-content: space-between;
+
+}
+.product__basketLink {
+    border-radius: 1rem;
+}
+.product__basketLink a {
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;  
+    padding: 0.5rem;
+    color: inherit;          /* ensures text color follows button */
+}
+
+.product__basketLink a:hover {
+    color: rgb(37, 48, 7);
+    text-decoration: none;   /* keeps it off even on hover */
+}
+.product__rating {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
