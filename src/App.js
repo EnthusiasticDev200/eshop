@@ -12,8 +12,8 @@ function App() {
             <Routes>
                   {/* checkout path */}
                 <Route path='/checkout' element={<Checkout/>} />
-                  
-                <Route path='/' element={<Header/> && <Home/>} />
+
+                <Route path='/' element={<Home/>} />
             </Routes>
         </Router>
         
