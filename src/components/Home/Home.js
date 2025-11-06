@@ -8,12 +8,14 @@ import threeIn1 from "../../images/3in1 NitRinz.jpg"
 import sheaBut from "../../images/sheaButterCoconut.jpg"
 import tshirt from "../../images/orangeRoundNeck.jpg"
 import samsungS9 from "../../images/samsung s9.jpg"
+import Header from '../Header/Header.js'
 
 
 function Home() {
     return (
         <div>
             <div className="home">
+                <Header/>
                 <div className="home__container">
                     {/* homePage image */}
                     <img src={Img} 
