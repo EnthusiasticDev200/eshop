@@ -8,7 +8,7 @@ import threeIn1 from "../../images/3in1 NitRinz.jpg"
 import sheaBut from "../../images/sheaButterCoconut.jpg"
 import tshirt from "../../images/orangeRoundNeck.jpg"
 import samsungS9 from "../../images/samsung s9.jpg"
-import Header from '../Header/Header'
+import Header from '../Header/Header.js'
 //import { Context } from './../../context'
 
 

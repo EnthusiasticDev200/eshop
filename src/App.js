@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
-import Home from "./components/Home/Home"
-import Checkout from './components/Checkout/Checkout';
+import Home from "./components/Home/Home.js"
+import Checkout from './components/Checkout/Checkout.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SignIn from './usersAction/SignIn';
+import SignIn from './usersAction/SignIn.js';
 //import {ContextProvider} from './context'; //jeph code
 // import { StateProvider } from './dataLayer/StateProvider';
 // import reducer, { initialState } from './dataLayer/reducer';
