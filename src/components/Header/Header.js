@@ -8,7 +8,7 @@ import { useStateValue } from "../../dataLayer/StateProvider";
 
 
 function Header(){
-    const [ {basket}, dispatch ] = useStateValue()
+    const [ {basket} ] = useStateValue() // removed dispatch
     return (
         <div className="parent__header">
                 {/* headers comp. logo&searchBar&Nav */ }
