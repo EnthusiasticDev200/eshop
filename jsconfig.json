@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "checkJs": false,
+     "baseUrl": "src",
     "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules"]
+    "include": ["src"],
+    "exclude": ["node_modules"]
+
 }
