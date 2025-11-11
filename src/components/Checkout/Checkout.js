@@ -8,7 +8,7 @@ import SubTotal from '../Subtotal/SubTotal'
 import { useStateValue } from '../../dataLayer/StateProvider'
 
 function Checkout() {
-    const [{ basket }, dispatch ] = useStateValue()
+    const [{ basket } ] = useStateValue() // removed dispatch
 
     return(
         <div>
