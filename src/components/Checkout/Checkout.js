@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Checkout.css"
 import Header from '../Header/Header'
-import CheckoutProduct from "../CheckoutProduct/CheckoutProduct.js"
+import CheckoutProduct from "../CheckoutProduct/CheckoutProduct"
 import adImage from "../../images/advert image.png"
 import SubTotal from '../Subtotal/SubTotal'
 
