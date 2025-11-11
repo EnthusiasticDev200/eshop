@@ -1,12 +1,14 @@
 import React from "react"
-import "./Header.css"
+import "./header.css"
 import SearchIcon from '@mui/icons-material/Search';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import { Link } from "react-router-dom"
+import { useStateValue } from "../../dataLayer/StateProvider";
 
 
 function Header(){
+    const [ {basket}, dispatch ] = useStateValue()
     return (
         <div className="parent__header">
                 {/* headers comp. logo&searchBar&Nav */ }
@@ -30,7 +32,10 @@ function Header(){
             <div className="header__nav">
                 <div className="nav__item">
                     <span className="nav__item__lineOne">Hello Guest</span>
-                    <span className="nav__item__lineTwo">Sign In</span>
+                    <Link to="signin" style={{ textDecoration : "none"}}>
+                        <span className="nav__item__lineTwo">Sign In</span>
+                    </Link>
+                    
                 </div>
 
                 <div className="nav__item">
@@ -42,7 +47,7 @@ function Header(){
                 <Link to="/checkout" style={{ textDecoration : "none"}}>
                     <div className="nav__item">
                         <ShoppingBasketIcon className="basketIcon" />
-                        <span className="nav__item__lineTwo">0</span>
+                        <span className="nav__item__lineTwo">{basket.length}</span>
                     </div>
                 </Link>
                 

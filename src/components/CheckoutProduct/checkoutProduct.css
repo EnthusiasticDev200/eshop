@@ -1,0 +1,15 @@
+.checkoutProd__image {
+    width: 10rem;
+    height: 10rem;
+}
+.checkoutProd__rating {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
+

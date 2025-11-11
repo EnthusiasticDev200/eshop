@@ -1,6 +1,6 @@
 import React from 'react'
-import "./Home.css"
-import Product from "../Product/Product.js"
+import "./home.css"
+import Product from "../Product/product.js"
 import Img from '../../images/shopping-supermarket-295711.webp'
 import AirJord from "../../images/black-jordan-13-shoes.jpeg"
 import honey from "../../images/honey 250ml.jpg"
@@ -8,10 +8,12 @@ import threeIn1 from "../../images/3in1 NitRinz.jpg"
 import sheaBut from "../../images/sheaButterCoconut.jpg"
 import tshirt from "../../images/orangeRoundNeck.jpg"
 import samsungS9 from "../../images/samsung s9.jpg"
-import Header from '../Header/Header.js'
+import Header from '../Header/header'
+//import { Context } from './../../context'
 
 
 function Home() {
+    // const { add } = useContext(Context);
     return (
         <div>
             <div className="home">
@@ -30,6 +32,7 @@ function Home() {
                             rating={5}
                             image={AirJord}    
                         />
+                        {/* {add(2,4)} */}
 
                         <Product 
                             id="2"
