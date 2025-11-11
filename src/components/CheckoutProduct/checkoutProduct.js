@@ -1,5 +1,5 @@
 import React from "react";
-import "./checkoutProduct.css"
+import "./CheckoutProduct.css"
 
 import { useStateValue } from "../../dataLayer/StateProvider";
 

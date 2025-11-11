@@ -1,6 +1,6 @@
 import React from 'react'
-import "./home.css"
-import Product from "../Product/product.js"
+import "./Home.css"
+import Product from "../Product/Product.js"
 import Img from '../../images/shopping-supermarket-295711.webp'
 import AirJord from "../../images/black-jordan-13-shoes.jpeg"
 import honey from "../../images/honey 250ml.jpg"
@@ -8,7 +8,7 @@ import threeIn1 from "../../images/3in1 NitRinz.jpg"
 import sheaBut from "../../images/sheaButterCoconut.jpg"
 import tshirt from "../../images/orangeRoundNeck.jpg"
 import samsungS9 from "../../images/samsung s9.jpg"
-import Header from '../Header/header'
+import Header from '../Header/Header'
 //import { Context } from './../../context'
 
 

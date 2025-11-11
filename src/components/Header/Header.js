@@ -1,5 +1,5 @@
 import React from "react"
-import "./header.css"
+import "./Header.css"
 import SearchIcon from '@mui/icons-material/Search';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';

@@ -3,7 +3,7 @@ import './SignIn.css'
 import { Link } from 'react-router-dom'
 import StorefrontIcon from '@mui/icons-material/Storefront';
 
-import Header from '../components/Header/header';
+import Header from '../components/Header/Header';
 
 
 function SignIm (){

@@ -1,5 +1,5 @@
 import React from 'react'
-import "./subTotal.css"
+import "./SubTotal.css"
 import { NumericFormat } from 'react-number-format'
 
 import { getBaskeTotal } from '../../dataLayer/reducer'

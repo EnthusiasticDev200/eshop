@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
-import Home from "./components/Home/home"
-import Checkout from './components/Checkout/checkout';
+import Home from "./components/Home/Home"
+import Checkout from './components/Checkout/Checkout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './usersAction/SignIn';
 //import {ContextProvider} from './context'; //jeph code

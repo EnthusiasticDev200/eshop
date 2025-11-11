@@ -1,9 +1,9 @@
 import React from 'react'
-import "./checkout.css"
-import Header from '../Header/header'
-import CheckoutProduct from "../CheckoutProduct/checkoutProduct"
+import "./Checkout.css"
+import Header from '../Header/Header'
+import CheckoutProduct from "../CheckoutProduct/CheckoutProduct"
 import adImage from "../../images/advert image.png"
-import SubTotal from '../Subtotal/subTotal'
+import SubTotal from '../Subtotal/SubTotal'
 
 import { useStateValue } from '../../dataLayer/StateProvider'
 
