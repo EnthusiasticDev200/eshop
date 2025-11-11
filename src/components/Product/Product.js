@@ -5,7 +5,7 @@ import { useStateValue } from "../../dataLayer/StateProvider"
 function Product({id, title, price, rating, image}) {
 
     // use the tut context API here
-    const [ dispatch ] = useStateValue(); //. Removed state. dispatch is same as action in reducer
+    const [ state, dispatch ] = useStateValue(); //. Removed state. dispatch is same as action in reducer
     
 
     const addToBasket = () =>{

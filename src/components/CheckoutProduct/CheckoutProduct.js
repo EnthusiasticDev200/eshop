@@ -5,7 +5,7 @@ import { useStateValue } from "../../dataLayer/StateProvider";
 
 
 function CheckoutProduct({id, title, image, price, rating}){
-    const [  dispatch ] = useStateValue() // removed {basket}
+    const [  {basket},dispatch ] = useStateValue() // removed {basket}
     
     const removeFromBasket = () =>{
         dispatch({
