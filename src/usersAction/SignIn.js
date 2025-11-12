@@ -20,7 +20,7 @@ function SignIm (){
                     </div>
                 </Link>
                 <div className="signIn__form">
-                    <h3> Please sign in</h3>
+                    <h3> Login</h3>
                     <form action="">
                         <h5>Email</h5>
                         <input type="text" className="email__input" value={email} onChange={e=> setEmail(e.target.email)}/>
@@ -34,7 +34,7 @@ function SignIm (){
 
                         <div className="signUp__form">
                             <h5> Don't have an account? </h5>
-                            <a href=''className="create__account__link" >Create account</a> 
+                            <a href=''className="create__account__link" target='_blank'>Create account</a> 
                         </div>
                     </form>
                 </div>

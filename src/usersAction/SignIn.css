@@ -1,8 +1,3 @@
-.signin {
- 
-}
-
-
 .signin__container {
     display: flex; 
     flex-direction: column;
@@ -14,12 +9,20 @@
     margin: 5rem 25rem 0rem 25rem;
     background-color: rgb(173, 187, 187)
 }
+
+.signIn__form > h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
 .signin__logo {
     display: flex;
     /* margin: 30px 0; */
     justify-content: center;
     align-items: center;
 }
+
 .signin__logo__image {
     color: orange;
     font-size :larger
@@ -40,10 +43,13 @@
     color: rgb(71, 7, 7);
     width: 20rem;
 }
+
 .email__input, .password__input {
-    width : 20rem;
-    height : 1.3rem
+    width : 19.7rem;
+    height : 1.3rem;
+
 }
+
 .create__account__link{
     background-color: whitesmoke;
     display: inline-block;
@@ -55,10 +61,12 @@
     font-size: bolder;
     
 }
+
 .signUp__form > h5{
     text-align: center;
     font-weight: 300;
 }
+
 .signUp__form > a:hover{
     background-color:#0a700a;
     color : white;
