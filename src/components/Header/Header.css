@@ -8,7 +8,7 @@
 
 .header__logo {
     display: flex;
-    color : white;
+    color: orange;
     justify-content: center;
     align-items: center;
     /* font-size: 12px;   */
