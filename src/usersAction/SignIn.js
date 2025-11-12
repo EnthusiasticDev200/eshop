@@ -23,14 +23,19 @@ function SignIm (){
                     <h3> Please sign in</h3>
                     <form action="">
                         <h5>Email</h5>
-                        <input type="text" value={email} onChange={e=> setEmail(e.target.email)}/>
+                        <input type="text" className="email__input" value={email} onChange={e=> setEmail(e.target.email)}/>
 
                         <h5>Password</h5>
-                        <input type="password" value={password} onChange={e=> setPassword(e.target.password)} /> <br />
+                        <input type="password" className="password__input" value={password} onChange={e=> setPassword(e.target.password)} /> <br />
                         <small className='remember__me'>
                             <input type="checkbox" /> Remember Me
                         </small> <br />
-                        <button type='submit'className='signIn__button'> Sign in</button>
+                        <button type='submit'className='signIn__button'> Login in</button>
+
+                        <div className="signUp__form">
+                            <h5> Don't have an account? </h5>
+                            <a href=''className="create__account__link" >Create account</a> 
+                        </div>
                     </form>
                 </div>
 

@@ -8,16 +8,11 @@
     flex-direction: column;
     align-items: center;
     height: 25rem;
-    
-    justify-content: center;
-   
+    justify-content: center;   
     padding: 0rem 0rem 5rem 0rem;
     border-style :ridge;
-    /* border-width: 0.1rem; */
-    margin: 5rem 30rem 0rem 30rem;
+    margin: 5rem 25rem 0rem 25rem;
     background-color: rgb(173, 187, 187)
-   
-    
 }
 .signin__logo {
     display: flex;
@@ -36,12 +31,36 @@
     color: white
 }
 .signIn__button {
-    /* background-color:grey; */
+    background-color:rgb(108, 240, 108);
     border-radius: 0.4rem;
     margin-top: 10px;
     border: 1px solid;
-    height: 1.5rem
+    height: 1.5rem;
+    text-align: center;
+    color: rgb(71, 7, 7);
+    width: 20rem;
 }
-.signIn__button :hover{
+.email__input, .password__input {
+    width : 20rem;
+    height : 1.3rem
+}
+.create__account__link{
+    background-color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 20rem;
+    height : 1.4rem;
+    color: red;
+    font-size: bolder;
     
+}
+.signUp__form > h5{
+    text-align: center;
+    font-weight: 300;
+}
+.signUp__form > a:hover{
+    background-color:#0a700a;
+    color : white;
+    border-radius: 0.4rem;
 }
