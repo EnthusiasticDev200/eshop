@@ -1,37 +1,46 @@
 .signin {
-    background-color: aliceblue;
+ 
 }
 
 
 .signin__container {
-    display: flex;
-    align-items: center;
-    height: fit-content;
+    display: flex; 
     flex-direction: column;
-    border-radius: 5px;
-    padding: 20px;
-    border: 0px 40px solid;
+    align-items: center;
+    height: 25rem;
+    
+    justify-content: center;
+   
+    padding: 0rem 0rem 5rem 0rem;
+    border-style :ridge;
+    /* border-width: 0.1rem; */
+    margin: 5rem 30rem 0rem 30rem;
+    background-color: rgb(173, 187, 187)
+   
+    
 }
 .signin__logo {
     display: flex;
-   margin: 30px 0;
+    /* margin: 30px 0; */
+    justify-content: center;
+    align-items: center;
 }
 .signin__logo__image {
     color: orange;
+    font-size :larger
 }
-.signin__title {
 
-}
-.signin__container > h2 {
+.signin__logo > h2 {
     font-weight: 500;
-    margin-bottom: 200px;
+    font-size: large;
+    color: white
 }
 .signIn__button {
-    background-color: orange;
-    border-radius: 1rem;
+    /* background-color:grey; */
+    border-radius: 0.4rem;
     margin-top: 10px;
     border: 1px solid;
-    height: 100%;
+    height: 1.5rem
 }
 .signIn__button :hover{
     

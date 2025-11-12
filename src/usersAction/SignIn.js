@@ -27,7 +27,9 @@ function SignIm (){
 
                         <h5>Password</h5>
                         <input type="password" value={password} onChange={e=> setPassword(e.target.password)} /> <br />
-
+                        <small className='remember__me'>
+                            <input type="checkbox" /> Remember Me
+                        </small> <br />
                         <button type='submit'className='signIn__button'> Sign in</button>
                     </form>
                 </div>
