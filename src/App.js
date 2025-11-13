@@ -4,15 +4,12 @@ import Home from "./components/Home/Home.js"
 import Checkout from './components/Checkout/Checkout.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './usersAction/SignIn.js';
-// import { StateProvider } from './dataLayer/StateProvider';
-// import reducer, { initialState } from './dataLayer/reducer';
+import SignUp from './usersAction/SignUp.js'
 
 
 function App() {
   return (
     <div className="App">
-        {/* <ContextProvider> */}
-       
             <Router>
               <Routes>
                     {/* checkout path */}
@@ -20,11 +17,9 @@ function App() {
 
                   <Route path='/' element={<Home/>} />
                   <Route path='/signin' element={<SignIn/>} />
-              </Routes>
-          </Router>
-        {/* </ContextProvider> */}
-        
-          
+                  <Route path='/signup' element={<SignUp/>} />
+              </Routes> 
+          </Router>   
     </div>
   );
 }
