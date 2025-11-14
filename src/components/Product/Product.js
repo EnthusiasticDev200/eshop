@@ -26,8 +26,9 @@ function Product({id, title, price, rating, image}) {
         <div>
             <div className="product">
                 <div className="product__info">
-                    <p className='product__title'> Item: {title} </p>
-                    <p className="product__price">${price}</p>
+                    <img src={image} alt="" className="product__image" />
+                    <p className='product__title'> {title} </p>
+                    <p className="product__price">₦{price}</p>
                     <div className="product__rating">
                         {/* create new Array, pass rating, fill it and mao each */}
                        {Array(rating) 
@@ -37,7 +38,7 @@ function Product({id, title, price, rating, image}) {
                        })}
                     </div>
 
-                    <img src={image} alt="" className="product__image" /> <br/>
+                     {/* <br/> */}
                     <button className='product__basketLink' onClick={addToBasket}>
                             Add to Basket
                     </button>
