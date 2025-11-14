@@ -1,13 +1,35 @@
-.home {
-    display: inline;
-    justify-content: space-between;
+.home{
+    /* display: inline;
+    justify-content: space-between; */
+    background-color: white;
+    height: 120rem;
     
 }
 
+/* cosmetic product styling */
+.cosmetic__products > h4, .fashion__products > h4, .edible__products > h4,
+.accessory__products > h4, .beverage__products > h4 {
+    color: white;
+    background-color: black;
+    margin: 0rem 0.4rem;
+    width :78.4rem
+}
+.cosmetic-rows, .fashion__rows, .edible__rows, .accessories__rows, .beverage__rows{
+    display: flex;
+    /* border-style: ridge; */
+    /* border : 1rem 3rem; */
+    padding : 1rem 2rem 1rem 1rem;
+    margin: 0rem 1.2rem 0rem 1.2rem;
+    gap: 3rem;
 
+}
+/* fashion product styling */
+.fashion__rows {
+
+}
 .home__image {
-    width: 79rem;
-    height: 45rem;
+    width: 78.8rem;
+    height: 25rem;
     
 }
 
@@ -27,9 +49,90 @@
     width: 33%;
 }
 
+ /* footer styling */
+.footer__div {
+    /* margin: 0re 0rem 5rem 0rem; */
+    
+}
+.home__footer {
+    background-color: rgb(20, 18, 18);
+    display: flex;
+    flex-direction: row;
+    height: 15rem;
+    margin : 38.8rem 0rem 0rem 0rem;
+    border-style: hidden;
+    gap: 5rem;
+}
 
+.eshop__newsletter > h6{
+    text-align:center;
+    color: white;
+    font-size: large;
+    
+}
 
+.eshop__app__download > h6{
+    text-align: left;
+    color: white;
+    font-size: large;
+}
 
+.eshop__image__and__name {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__eshop__logoImage {
+    color: orange;
+    size: 100px;
+    font-size: larger;
+    margin: 2rem 2rem 4rem ;
+}
+.eshop__image__and__name > h6 {
+    font-size: xx-large;
+    color:  white;
+    margin: 1.7rem -1.5rem ;
+}
+
+.footer__newsletter__sub {
+    text-decoration: none;
+    color: white;
+    border-width : 1rem;
+    padding: 0rem 0.5rem 0.1rem;
+    text-align: center;
+    font-size:small;
+}
+
+.footer__newsletter__btn {
+    height: 2rem;
+    border-radius: 0.2rem;
+    border-style: ridge;
+    border-color: white;
+    background-color: rgb(48, 41, 41);
+    margin : 0rem 0.3rem
+}
+
+.footer__newsletter__input {
+    width: 15rem;
+    height: 1.5rem;
+    text-align: center;
+
+}
+.eshop__newsletter__checkbox_div {
+    display: flex;
+    text-align: center;
+}
+.eshop__newsletter__checkbox_div > input{
+    width: 1rem;
+}
+
+.home__footer__par{
+    color: white;
+}
+.eshop__newsletter__sub__par{
+    color: white;
+    font-weight: 500;
+}
 
 
 
