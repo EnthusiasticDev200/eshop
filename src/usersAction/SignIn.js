@@ -24,7 +24,6 @@ function SignIn (){
         }
         try {
             const response = await signInWithEmailAndPassword(auth, email, password);
-            console.log("Login successful:", response.user);
             alert("Login successful!");
         } catch (error) {
             alert(error.message);

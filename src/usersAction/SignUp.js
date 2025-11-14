@@ -26,17 +26,6 @@ function SignUp (){
     // sign up logic
     const registerUser = async ( e) =>{
         e.preventDefault();
-        // const {
-        //     firstName, 
-        //     lastName, 
-        //     middleName,
-        //     username,
-        //     email, 
-        //     phoneNumber,
-        //     role,
-        // } = formData; 
-
-       
 
         if ( !firstName || !lastName || !password || !username || !email || !phoneNumber || !role ){
             alert("Omitted field is required")
@@ -47,8 +36,6 @@ function SignUp (){
             const createUserAuth = await createUserWithEmailAndPassword (auth, email, password) 
             // extract user info
             const user = createUserAuth.user
-            console.log('user info', user)
-
             //create user profile info in firestore database
             const response = await setDoc(doc (db, "users", user.uid), { // collection = "users"
                 firstName, lastName, middleName, username, email,
@@ -56,7 +43,6 @@ function SignUp (){
                 uid : user.uid,
                 createdAt : new Date().toISOString()
             })
-            console.log('response', response)
             alert('new user created successfully')
             // redirect to login
             navigate("/signin") 
