@@ -1,6 +1,4 @@
 .home{
-    /* display: inline;
-    justify-content: space-between; */
     background-color: white;
     height: 120rem;
     
@@ -30,27 +28,7 @@
     
 }
 
-.home-row-two,
-.home-row-three {
-    display: flex;
-    gap: 20px;
-}
-
-.home-row-two > div {
-    /* flex-basis: 1/2; */
-    width: 50%;
-}
-
-.home-row-three > div {
-    /* flex-basis: 1/2; */
-    width: 33%;
-}
-
  /* footer styling */
-.footer__div {
-    /* margin: 0re 0rem 5rem 0rem; */
-    
-}
 .home__footer {
     background-color: rgb(20, 18, 18);
     display: flex;
