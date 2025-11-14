@@ -21,7 +21,7 @@ function SubTotal() {
                 value={getBaskeTotal(basket)}
                 displayType={"text"}
                 thousandSeparator={true}
-                prefix={"$"}
+                prefix={"₦"}
             />
             <button className='proceedToPayment__button'> Procced to payment </button>
         </div>
