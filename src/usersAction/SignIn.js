@@ -48,14 +48,14 @@ function SignIn (){
                         <h5>Email</h5>
                         <input 
                             type="email" 
-                            className="email__input" 
+                            className="signIn__email__input" 
                             value={email} 
                             onChange={ (e)=> setEmail(e.target.value)}/>
 
                         <h5>Password</h5>
                         <input 
                             type="password" 
-                            className="password__input" 
+                            className="signIn__password__input" 
                             value={password} 
                             onChange={ (e)=> setPassword(e.target.value)} /> <br />
 
@@ -68,7 +68,7 @@ function SignIn (){
                             className='signIn__button' 
                             > Login in</button>
 
-                        <div className="signUp__form">
+                        <div className="link__signUp__form">
                             <h5> Don't have an account? </h5>
                             <a 
                                 href='/signup'

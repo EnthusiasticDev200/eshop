@@ -44,7 +44,7 @@
     width: 20rem;
 }
 
-.email__input, .password__input {
+.signIn__email__input, .signIn__password__input {
     width : 19.7rem;
     height : 1.3rem;
 
@@ -62,12 +62,12 @@
     
 }
 
-.signUp__form > h5{
+.link__signUp__form > h5{
     text-align: center;
     font-weight: 300;
 }
 
-.signUp__form > a:hover{
+.link__signUp__form > a:hover{
     background-color:#0a700a;
     color : white;
     border-radius: 0.4rem;
