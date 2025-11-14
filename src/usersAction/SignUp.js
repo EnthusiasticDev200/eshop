@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './SignUp.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import StorefrontIcon from '@mui/icons-material/Storefront';
 
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -21,7 +21,8 @@ function SignUp (){
 
     const [ password, setPassword] = useState('')
 
- 
+    const navigate = useNavigate()
+
     // sign up logic
     const registerUser = async ( e) =>{
         e.preventDefault();
@@ -57,9 +58,8 @@ function SignUp (){
             })
             console.log('response', response)
             alert('new user created successfully')
-            if (response) {
-                alert('yoooo!!!')
-            }
+            // redirect to login
+            navigate("/signin") 
         }catch(error){
             console.log("error creating new user", error)
             alert(error.message)
