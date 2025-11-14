@@ -17,7 +17,7 @@ function CheckoutProduct({id, title, image, price, rating}){
         <div className="checkoutProduct">
             <img src={image} alt="" className="checkoutProd__image"/>
             <div className="checkoutProduct__titile">{ title }  </div>
-            <p className="checkoutProd__price">${ price }</p>
+            <p className="checkoutProd__price">₦{ price }</p>
 
             <div className="checkoutProd__rating"> 
                 {Array(rating) 
