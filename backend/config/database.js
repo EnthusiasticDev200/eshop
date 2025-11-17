@@ -1,17 +1,35 @@
-import { Db, MongoCLient } from "mongodb"
+import { MongoClient } from "mongodb"
 import dotenv from "dotenv"
 
 
 dotenv.config()
 
-const dbNmae = process.env.DB_NAME
-
+let db = null
+let client = null
 
 export async function connectDb(){
-    const uri = process.env.MONGODB_STRING
-    const client = new MongoCLient(uri)
-    await client.conect()
-    console.log("DB connected successfully")
+    const dbName = process.env.NODE_ENV === 'development'
+        ? process.env.ENV_DB_NAME 
+        : process.env.PROD_DB_NAME 
+
+    const uri = process.env.NODE_ENV ==='development'
+        ? process.env.ENV_MONGODB_STRING
+        : process.env.PROD_MONGO_STRING
+    try{
+        if (!client){
+            client = new MongoClient(uri)
+            await client.connect()
+            console.log("DB connected successfully")
+        }
+        if(!db){
+            db = client.db(dbName)
+            console.log("using database", dbName)
+        }
+        return db
+    }catch(error){
+        console.error("DB connection failed", error)
+    }
+    
 }
 
 
