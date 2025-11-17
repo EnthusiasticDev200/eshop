@@ -2,7 +2,11 @@ import express from "express"
 import dotenv from "dotenv"
 import http from "http"
 import cors from "cors"
-import authorizedOrigin from "./config/cors"
+
+
+
+import authorizedOrigin from "./config/cors.js"
+import appRoutes from "./routes/routes.js"
 
 dotenv.config()
 
@@ -24,6 +28,8 @@ app.use(cors({
     methods : ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
     credentials : true
 }))
+
+app.use('/api', appRoutes)
 
 const PORT = process.env.APP_PORT
 
