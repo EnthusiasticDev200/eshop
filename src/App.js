@@ -5,6 +5,7 @@ import Checkout from './components/Checkout/Checkout.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SignIn from './usersAction/SignIn.js';
 import SignUp from './usersAction/SignUp.js'
+import CreateProduct from 'components/Product/CreateProduct';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
                   <Route path='/' element={<Home/>} />
                   <Route path='/signin' element={<SignIn/>} />
                   <Route path='/signup' element={<SignUp/>} />
+                  <Route path='/create/product' element={<CreateProduct/>}/>
               </Routes> 
           </Router>   
     </div>
