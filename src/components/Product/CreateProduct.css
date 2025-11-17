@@ -1,0 +1,74 @@
+.create__product__container {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    height: 25rem;
+    justify-content: center;   
+    padding: 0rem 0rem 5rem 0rem;
+    border-style :ridge;
+    margin: 5rem 25rem 0rem 25rem;
+    background-color: rgb(173, 187, 187)
+}
+
+.create__product__form > h3{
+    text-align: center;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.create__product__logo {
+    display: flex;
+    /* margin: 30px 0; */
+    justify-content: center;
+    align-items: center;
+}
+
+.create__product__logo__image {
+    color: orange;
+    font-size :larger
+}
+
+.create__product__logo > h2 {
+    font-weight: 500;
+    font-size: large;
+    color: white
+}
+.signIncreate__product__button {
+    background-color:rgb(108, 240, 108);
+    border-radius: 0.4rem;
+    margin-top: 10px;
+    border: 1px solid;
+    height: 1.5rem;
+    text-align: center;
+    color: rgb(71, 7, 7);
+    width: 20rem;
+}
+
+.create__product__price__input, .create__product__title__input{
+    width : 19.7rem;
+    height : 1.3rem;
+
+}
+
+/* .create__account__link{
+    background-color: whitesmoke;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: 20rem;
+    height : 1.4rem;
+    color: red;
+    font-size: bolder;
+    
+}
+
+.link__signUp__form > h5{
+    text-align: center;
+    font-weight: 300;
+}
+
+.link__signUp__form > a:hover{
+    background-color:#0a700a;
+    color : white;
+    border-radius: 0.4rem;
+} */
