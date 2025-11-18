@@ -10,6 +10,10 @@
     background-color: rgb(173, 187, 187)
 }
 
+.create__productn__form > h3{
+    text-align: center;
+}
+
 .create__product__form > h3{
     text-align: center;
     font-weight: bolder;
@@ -33,10 +37,10 @@
     font-size: large;
     color: white
 }
-.signIncreate__product__button {
+.create__product__button {
     background-color:rgb(108, 240, 108);
     border-radius: 0.4rem;
-    margin-top: 10px;
+    margin-top: 15px;
     border: 1px solid;
     height: 1.5rem;
     text-align: center;
@@ -44,9 +48,11 @@
     width: 20rem;
 }
 
-.create__product__price__input, .create__product__title__input{
+.create__product__price__input, .create__product__title__input,
+.create__product__image__input{
     width : 19.7rem;
     height : 1.3rem;
+    margin : 0rem 0rem 0.6rem 0rem;
 
 }
 
