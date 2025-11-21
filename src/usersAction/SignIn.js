@@ -1,11 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './SignIn.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import StorefrontIcon from '@mui/icons-material/Storefront';
 
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
-import { auth } from "../firebaseAuth/authConfig"
+import { doc,getDoc } from 'firebase/firestore';
+
+import { auth, db } from "../firebaseAuth/authConfig"
+
+import UserContext from 'context/userContext';
 
 
 function SignIn (){
@@ -13,7 +17,10 @@ function SignIn (){
     const [ email, setEmail ] = useState('')
     const [ password, setPassword ] = useState('')
 
- 
+    const navigate = useNavigate()
+     //initate setuser
+    const { setUser } = useContext(UserContext)
+    
     // login logic
     const logIn = async (e) => {
         e.preventDefault()
@@ -24,7 +31,28 @@ function SignIn (){
         }
         try {
             const response = await signInWithEmailAndPassword(auth, email, password);
-            alert("Login successful!");
+            console.log("response ",response)
+        
+            // if successful, get username
+            const user = auth.currentUser;
+            if ( !user ) {
+                alert("Please login")
+                return
+            }
+            console.log("user", user)
+            // get firestore db
+            const userDoc = await getDoc(doc(db, "users", user.uid))
+            
+            if (userDoc.exists()) {
+                const username = userDoc.data().username   
+               
+                //update global user context
+                setUser({
+                    username : username
+                })
+                alert(`Welcome ${username}`)
+            }
+            navigate('/') // redirect home
         } catch (error) {
             alert(error.message);
             console.error("Login error:", error);
