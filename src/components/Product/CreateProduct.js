@@ -26,7 +26,9 @@ function CreateProduct(){
 
         try{
             const url = process.env.REACT_APP_CREATE_PRODUCT_IMAGE_URL
-        
+            
+            console.log("create imageURL", url)
+
             const sendfile = await fetch(url,
                 {   
                     method : 'POST',
@@ -44,6 +46,7 @@ function CreateProduct(){
 
         try{
             const url = process.env.REACT_APP_CREATE_PRODUCT_API
+            console.log("create product url", url)
 
             const response = await fetch(url,{
                 method : 'POST',

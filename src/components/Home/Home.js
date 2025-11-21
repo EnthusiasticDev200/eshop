@@ -40,6 +40,22 @@ import StorefrontIcon from "@mui/icons-material/Storefront"
 
 function Home() {
     // const { add } = useContext(Context);
+    const getProducts = async ()=>{
+        try{
+            const fetchProducts = process.env.PRODUCTS_API
+            const response = await fetch(fetchProducts, {
+                method : "GET",
+            })
+            if(response.status !== 200) throw new Error("get products failed")
+            const data = await response.json()
+            console.log('data', data)
+            const products = {...data}
+        }catch(error){
+            console.log("api calling product info failed", error)
+        }
+
+    }
+    
     return (
         <div>
             <div className="home">
