@@ -34,8 +34,12 @@
     border-radius: 1rem;
 }
 
+.header__searchIcon__btn{
+    color: black;
+}
+
 .header__searchIcon {
-    color: white;
+    color: white; 
 }
 .header__nav {
     display: flex;
